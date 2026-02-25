@@ -16,7 +16,7 @@ if st.button("Add the book"):
     "price" : price
   }
 
-st.session_state.books.append(book)
+st.session_state.books.append(books)
 st,success("The book has been added!")
 
 if st.button("Show all books"):
