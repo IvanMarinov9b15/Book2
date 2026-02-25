@@ -17,7 +17,7 @@ if st.button("Add the book"):
   }
 
 st.session_state.books.append(book)
-st,success("The book has been added!")
+st.success("The book has been added!")
 
 if st.button("Show all books"):
   if len(st.session_state.books) == 0:
