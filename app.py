@@ -7,7 +7,7 @@ if "books" not in st.session_state:
 st.header("Add book")
 title = st.text_input("Title")
 author = st.text_input("Author")
-price = st.number("Price", min_value=0.0)
+price = st.number_input("Price", min_value=0.0)
 if st.button("Add the book"):
 
   book = {
