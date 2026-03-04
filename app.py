@@ -32,9 +32,8 @@ else:
 st.header("Searching by author")
 search_author = st.text_input("Enter name of author")
 if st.button("Search by author"):
+  found = False
   
-found = False
-
 for book in st.session_state.books:
   if book["author"] == search_author:
     st.write(book)
