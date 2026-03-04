@@ -21,7 +21,7 @@ st.success("The book has been added!")
 
 if st.button("Show all books"):
   if len(st.session_state.book) == 0:
-  st.write("There are no added books.")
+    st.write("There are no added books.")
 else:
   for book in st.session_state.books:
     st.write("Title:", book["title"])
