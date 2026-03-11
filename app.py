@@ -29,9 +29,9 @@ if st.button("Show all books"):
             st.write(f"**Price:** {book['price']}")
             st.write("---")
 
-st.header("Searching by author")
+st.header("Searching by Author")
 search_author = st.text_input("Add authors name")
-if st.button("Search by author"):
+if st.button("Search by Author"):
     found = False
     for book in st.session_state.books:
         if book["author"].lower() == search_author.lower():
@@ -40,9 +40,9 @@ if st.button("Search by author"):
     if not found:
         st.write("There are no author from this author.")
 
-st.header("Searching by title")
+st.header("Searching by Title")
 search_title = st.text_input("Enter the book's title")
-if st.button("Search by title"):
+if st.button("Search by Title"):
     found = False
     for book in st.session_state.books:
         if search_title.lower() in book["title"].lower():
@@ -51,9 +51,9 @@ if st.button("Search by title"):
     if not found:
         st.write("There have not benn books with that title.")
 
-st.header("Searching by price")
+st.header("Searching by Price")
 max_price = st.number_input("Enter maximum price", min_value=0.0)
-if st.button("Search by price"):
+if st.button("Search by Price"):
     found = False
     for book in st.session_state.books:
         if book["price"] <= max_price:
