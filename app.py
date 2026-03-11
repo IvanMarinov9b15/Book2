@@ -38,7 +38,7 @@ if st.button("Search by Author"):
             st.write(book)
             found = True
     if not found:
-        st.write("There are no author from this author.")
+        st.write("There are no books from this author.")
 
 st.header("Searching by Title")
 search_title = st.text_input("Enter the book's title")
@@ -49,7 +49,7 @@ if st.button("Search by Title"):
             st.write(book)
             found = True
     if not found:
-        st.write("There have not benn books with that title.")
+        st.write("There are no books with that title.")
 
 st.header("Searching by Price")
 max_price = st.number_input("Enter maximum price", min_value=0.0)
